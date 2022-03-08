@@ -11,7 +11,7 @@ import Foundation
 //--------------------------------------------------------------------------
 // MARK: - ANREyeDelegate
 //--------------------------------------------------------------------------
-@objc public protocol ANREyeDelegate: class {
+@objc public protocol ANREyeDelegate: AnyObject {
     @objc optional func anrEye(anrEye:ANREye,
                                catchWithThreshold threshold:Double,
                                mainThreadBacktrace:String?,
